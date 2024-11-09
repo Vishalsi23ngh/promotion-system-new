@@ -1,6 +1,6 @@
-package com.example.Promotion.Management.System.model;
+package com.example.promotion.System.model;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
+import com.example.promotion.System.Enums.ProductType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;

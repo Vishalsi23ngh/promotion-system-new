@@ -1,16 +1,16 @@
-package com.example.Promotion.Management.System.Service;
+package com.example.promotion.System.Service;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Exceptions.UserNotExistException;
-import com.example.Promotion.Management.System.Repository.ProductRepository;
-import com.example.Promotion.Management.System.Repository.PromotionRepository;
-import com.example.Promotion.Management.System.Repository.UserHistoryRepository;
-import com.example.Promotion.Management.System.Repository.UserRepository;
-import com.example.Promotion.Management.System.Transformer.UserHistoryTransformer;
-import com.example.Promotion.Management.System.dto.requestDto.UserHistoryRequest;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.User;
-import com.example.Promotion.Management.System.model.UserHistory;
+
+import com.example.promotion.System.Exceptions.UserNotExistException;
+import com.example.promotion.System.Repository.ProductRepository;
+import com.example.promotion.System.Repository.PromotionRepository;
+import com.example.promotion.System.Repository.UserHistoryRepository;
+import com.example.promotion.System.Repository.UserRepository;
+import com.example.promotion.System.Transformer.UserHistoryTransformer;
+import com.example.promotion.System.dto.requestDto.UserHistoryRequest;
+import com.example.promotion.System.model.Product;
+import com.example.promotion.System.model.User;
+import com.example.promotion.System.model.UserHistory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +28,7 @@ public class UserHistoryService {
 
     private  final PromotionRepository promotionRepository;
 
-    private  final  ProductRepository productRepository;
+    private  final ProductRepository productRepository;
 
 
 

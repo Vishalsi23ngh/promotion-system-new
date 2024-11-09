@@ -1,14 +1,13 @@
-package com.example.Promotion.Management.System.model;
+package com.example.promotion.System.model;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
+import com.example.promotion.System.Enums.ProductType;
+import com.example.promotion.System.Enums.Promotion_Type;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Getter

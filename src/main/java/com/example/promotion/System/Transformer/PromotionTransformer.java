@@ -1,10 +1,11 @@
-package com.example.Promotion.Management.System.Transformer;
+package com.example.promotion.System.Transformer;
 
-import com.example.Promotion.Management.System.dto.requestDto.PromotionRequest;
-import com.example.Promotion.Management.System.dto.responseDto.PromotionsResponse;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.Promotions;
-import com.example.Promotion.Management.System.model.User;
+
+import com.example.promotion.System.dto.requestDto.PromotionRequest;
+import com.example.promotion.System.dto.responseDto.PromotionsResponse;
+import com.example.promotion.System.model.Product;
+import com.example.promotion.System.model.Promotions;
+import com.example.promotion.System.model.User;
 
 public class PromotionTransformer {
     public static Promotions promotionsRequestToPromotion(PromotionRequest promotionRequest , Product product, User user){

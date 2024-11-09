@@ -1,9 +1,7 @@
-package com.example.Promotion.Management.System.dto.responseDto;
+package com.example.promotion.System.dto.responseDto;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.User;
+import com.example.promotion.System.Enums.ProductType;
+import com.example.promotion.System.Enums.Promotion_Type;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

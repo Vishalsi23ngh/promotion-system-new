@@ -1,4 +1,4 @@
-package com.example.Promotion.Management.System.Exceptions;
+package com.example.promotion.System.Exceptions;
 
 public class IllegalArgumentException extends RuntimeException{
 

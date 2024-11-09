@@ -1,8 +1,8 @@
-package com.example.Promotion.Management.System.dto.responseDto;
+package com.example.promotion.System.dto.responseDto;
 
-import com.example.Promotion.Management.System.Enums.Gender;
-import com.example.Promotion.Management.System.Enums.Profession;
-import com.example.Promotion.Management.System.Enums.UserType;
+import com.example.promotion.System.Enums.Gender;
+import com.example.promotion.System.Enums.Profession;
+import com.example.promotion.System.Enums.UserType;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

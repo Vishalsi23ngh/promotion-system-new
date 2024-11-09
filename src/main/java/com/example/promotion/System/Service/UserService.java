@@ -1,16 +1,17 @@
-package com.example.Promotion.Management.System.Service;
+package com.example.promotion.System.Service;
 
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.example.Promotion.Management.System.Repository.ProductRepository;
-import com.example.Promotion.Management.System.Repository.PromotionRepository;
-import com.example.Promotion.Management.System.Repository.UserHistoryRepository;
-import com.example.Promotion.Management.System.Repository.UserRepository;
-import com.example.Promotion.Management.System.Transformer.UserTransformer;
-import com.example.Promotion.Management.System.dto.requestDto.UserRequest;
-import com.example.Promotion.Management.System.dto.responseDto.UserResponse;
-import com.example.Promotion.Management.System.model.Promotions;
-import com.example.Promotion.Management.System.model.User;
-import com.example.Promotion.Management.System.model.UserHistory;
+
+import com.example.promotion.System.Enums.Promotion_Type;
+import com.example.promotion.System.Repository.ProductRepository;
+import com.example.promotion.System.Repository.PromotionRepository;
+import com.example.promotion.System.Repository.UserHistoryRepository;
+import com.example.promotion.System.Repository.UserRepository;
+import com.example.promotion.System.Transformer.UserTransformer;
+import com.example.promotion.System.dto.requestDto.UserRequest;
+import com.example.promotion.System.dto.responseDto.UserResponse;
+import com.example.promotion.System.model.Promotions;
+import com.example.promotion.System.model.User;
+import com.example.promotion.System.model.UserHistory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +31,7 @@ public class UserService {
     private  final PromotionRepository promotionRepository;
 
     private final EmailService emailService;
-    public  UserResponse  addUser(UserRequest userRequest) {
+    public UserResponse addUser(UserRequest userRequest) {
         Optional<User> optionalUser = userRepository.findByEmailId(userRequest.getEmailId());
         if(optionalUser.isPresent()){
             throw new RuntimeException("this email id is already registered , use different emailId");

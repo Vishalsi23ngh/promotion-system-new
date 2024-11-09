@@ -1,8 +1,8 @@
-package com.example.Promotion.Management.System.Controller;
+package com.example.promotion.System.Controller;
 
-import com.example.Promotion.Management.System.Service.ProductService;
-import com.example.Promotion.Management.System.dto.requestDto.ProductRequest;
-import com.example.Promotion.Management.System.dto.responseDto.ProductResponse;
+import com.example.promotion.System.Service.ProductService;
+import com.example.promotion.System.dto.requestDto.ProductRequest;
+import com.example.promotion.System.dto.responseDto.ProductResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,9 +1,8 @@
-package com.example.Promotion.Management.System.Repository;
+package com.example.promotion.System.Repository;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.Promotions;
+import com.example.promotion.System.Enums.ProductType;
+import com.example.promotion.System.Enums.Promotion_Type;
+import com.example.promotion.System.model.Promotions;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

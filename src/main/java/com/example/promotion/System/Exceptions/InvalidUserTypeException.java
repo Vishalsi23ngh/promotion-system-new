@@ -1,4 +1,4 @@
-package com.example.Promotion.Management.System.Exceptions;
+package com.example.promotion.System.Exceptions;
 
 public class InvalidUserTypeException extends RuntimeException{
     public InvalidUserTypeException(String message){

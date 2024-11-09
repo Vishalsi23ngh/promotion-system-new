@@ -1,17 +1,16 @@
-package com.example.Promotion.Management.System.Transformer;
+package com.example.promotion.System.Transformer;
 
-import com.example.Promotion.Management.System.dto.requestDto.UserHistoryRequest;
-import com.example.Promotion.Management.System.dto.responseDto.UserHistoryResponse;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.Promotions;
-import com.example.Promotion.Management.System.model.User;
-import com.example.Promotion.Management.System.model.UserHistory;
+import com.example.promotion.System.dto.responseDto.UserHistoryResponse;
+import com.example.promotion.System.model.Product;
+import com.example.promotion.System.model.Promotions;
+import com.example.promotion.System.model.User;
+import com.example.promotion.System.model.UserHistory;
 
 import java.time.LocalDateTime;
 
 public class UserHistoryTransformer {
 
-    public static UserHistory userHistoryRequestToUserHistory( User user, Product product){
+    public static UserHistory userHistoryRequestToUserHistory(User user, Product product){
         return UserHistory.builder()
                 .user(user)
                 .product(product)

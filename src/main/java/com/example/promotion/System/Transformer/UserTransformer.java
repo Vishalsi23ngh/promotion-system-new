@@ -1,8 +1,8 @@
-package com.example.Promotion.Management.System.Transformer;
+package com.example.promotion.System.Transformer;
 
-import com.example.Promotion.Management.System.dto.requestDto.UserRequest;
-import com.example.Promotion.Management.System.dto.responseDto.UserResponse;
-import com.example.Promotion.Management.System.model.User;
+import com.example.promotion.System.dto.requestDto.UserRequest;
+import com.example.promotion.System.dto.responseDto.UserResponse;
+import com.example.promotion.System.model.User;
 
 public class UserTransformer {
 

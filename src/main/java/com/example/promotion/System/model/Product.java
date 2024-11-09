@@ -1,8 +1,6 @@
-package com.example.Promotion.Management.System.model;
+package com.example.promotion.System.model;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.example.promotion.System.Enums.ProductType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +8,6 @@ import lombok.experimental.FieldDefaults;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Getter

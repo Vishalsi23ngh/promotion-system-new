@@ -1,4 +1,4 @@
-package com.example.Promotion.Management.System.Enums;
+package com.example.promotion.System.Enums;
 
 public enum Promotion_Type {
     SPORTS,

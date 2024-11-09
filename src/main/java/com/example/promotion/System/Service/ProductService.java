@@ -1,14 +1,15 @@
-package com.example.Promotion.Management.System.Service;
+package com.example.promotion.System.Service;
 
-import com.example.Promotion.Management.System.Enums.UserType;
-import com.example.Promotion.Management.System.Exceptions.InvalidUserTypeException;
-import com.example.Promotion.Management.System.Repository.ProductRepository;
-import com.example.Promotion.Management.System.Repository.UserRepository;
-import com.example.Promotion.Management.System.Transformer.ProductTransformer;
-import com.example.Promotion.Management.System.dto.requestDto.ProductRequest;
-import com.example.Promotion.Management.System.dto.responseDto.ProductResponse;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.User;
+
+import com.example.promotion.System.Enums.UserType;
+import com.example.promotion.System.Exceptions.InvalidUserTypeException;
+import com.example.promotion.System.Repository.ProductRepository;
+import com.example.promotion.System.Repository.UserRepository;
+import com.example.promotion.System.Transformer.ProductTransformer;
+import com.example.promotion.System.dto.requestDto.ProductRequest;
+import com.example.promotion.System.dto.responseDto.ProductResponse;
+import com.example.promotion.System.model.Product;
+import com.example.promotion.System.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

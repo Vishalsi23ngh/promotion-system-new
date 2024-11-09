@@ -1,7 +1,7 @@
-package com.example.Promotion.Management.System.Repository;
+package com.example.promotion.System.Repository;
 
-import com.example.Promotion.Management.System.model.User;
 
+import com.example.promotion.System.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

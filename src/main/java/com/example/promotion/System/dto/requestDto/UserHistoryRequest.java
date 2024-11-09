@@ -1,4 +1,4 @@
-package com.example.Promotion.Management.System.dto.requestDto;
+package com.example.promotion.System.dto.requestDto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

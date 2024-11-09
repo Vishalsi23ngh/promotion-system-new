@@ -1,14 +1,14 @@
-package com.example.Promotion.Management.System.Controller;
+package com.example.promotion.System.Controller;
 
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.example.Promotion.Management.System.Service.EmailService;
-import com.example.Promotion.Management.System.Service.ProductService;
-import com.example.Promotion.Management.System.Service.UserHistoryService;
-import com.example.Promotion.Management.System.Service.UserService;
-import com.example.Promotion.Management.System.dto.requestDto.UserRequest;
-import com.example.Promotion.Management.System.dto.responseDto.UserResponse;
-import com.example.Promotion.Management.System.model.Promotions;
-import com.example.Promotion.Management.System.model.UserHistory;
+
+import com.example.promotion.System.Enums.Promotion_Type;
+import com.example.promotion.System.Service.ProductService;
+import com.example.promotion.System.Service.UserHistoryService;
+import com.example.promotion.System.Service.UserService;
+import com.example.promotion.System.dto.requestDto.UserRequest;
+import com.example.promotion.System.dto.responseDto.UserResponse;
+import com.example.promotion.System.model.Promotions;
+import com.example.promotion.System.model.UserHistory;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

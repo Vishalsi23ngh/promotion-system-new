@@ -1,15 +1,14 @@
-package com.example.Promotion.Management.System.model;
+package com.example.promotion.System.model;
 
-import com.example.Promotion.Management.System.Enums.Gender;
-import com.example.Promotion.Management.System.Enums.Profession;
-import com.example.Promotion.Management.System.Enums.UserType;
+import com.example.promotion.System.Enums.Gender;
+import com.example.promotion.System.Enums.Profession;
+import com.example.promotion.System.Enums.UserType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.List;
-import java.util.UUID;
 
 
 @Getter

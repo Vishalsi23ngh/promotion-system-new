@@ -1,8 +1,6 @@
-package com.example.Promotion.Management.System.dto.requestDto;
+package com.example.promotion.System.dto.requestDto;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.Promotion_Type;
-import com.example.Promotion.Management.System.model.User;
+import com.example.promotion.System.Enums.ProductType;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;

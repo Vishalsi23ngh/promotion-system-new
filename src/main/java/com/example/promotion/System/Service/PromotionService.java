@@ -1,19 +1,20 @@
-package com.example.Promotion.Management.System.Service;
+package com.example.promotion.System.Service;
 
-import com.example.Promotion.Management.System.Enums.ProductType;
-import com.example.Promotion.Management.System.Enums.UserType;
-import com.example.Promotion.Management.System.Exceptions.InvalidUserTypeException;
-import com.example.Promotion.Management.System.Repository.ProductRepository;
-import com.example.Promotion.Management.System.Repository.PromotionRepository;
-import com.example.Promotion.Management.System.Repository.UserHistoryRepository;
-import com.example.Promotion.Management.System.Repository.UserRepository;
-import com.example.Promotion.Management.System.Transformer.PromotionTransformer;
-import com.example.Promotion.Management.System.dto.requestDto.PromotionRequest;
-import com.example.Promotion.Management.System.dto.responseDto.PromotionsResponse;
-import com.example.Promotion.Management.System.model.Product;
-import com.example.Promotion.Management.System.model.Promotions;
-import com.example.Promotion.Management.System.model.User;
-import com.example.Promotion.Management.System.model.UserHistory;
+
+import com.example.promotion.System.Enums.ProductType;
+import com.example.promotion.System.Enums.UserType;
+import com.example.promotion.System.Exceptions.InvalidUserTypeException;
+import com.example.promotion.System.Repository.ProductRepository;
+import com.example.promotion.System.Repository.PromotionRepository;
+import com.example.promotion.System.Repository.UserHistoryRepository;
+import com.example.promotion.System.Repository.UserRepository;
+import com.example.promotion.System.Transformer.PromotionTransformer;
+import com.example.promotion.System.dto.requestDto.PromotionRequest;
+import com.example.promotion.System.dto.responseDto.PromotionsResponse;
+import com.example.promotion.System.model.Product;
+import com.example.promotion.System.model.Promotions;
+import com.example.promotion.System.model.User;
+import com.example.promotion.System.model.UserHistory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,22 +1,28 @@
-# Importing JDK and copying required files
+# Stage 1: Build the application
 FROM openjdk:19-jdk AS build
 WORKDIR /app
-COPY pom.xml .
-COPY src src
 
-# Copy Maven wrapper
+# Copy the necessary files
+COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
+COPY src src
 
-# Set execution permission for the Maven wrapper
+# Ensure the Maven wrapper has execute permissions
 RUN chmod +x ./mvnw
+
+# Build the project and skip tests
 RUN ./mvnw clean package -DskipTests
 
-# Stage 2: Create the final Docker image using OpenJDK 19
+# Stage 2: Create the final Docker image
 FROM openjdk:19-jdk
-VOLUME /tmp
+WORKDIR /app
 
-# Copy the JAR from the build stage
-COPY --from=build /app/target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# Expose the default Spring Boot port
 EXPOSE 8080
+
+# Copy the JAR file from the build stage
+COPY --from=build /app/target/*.jar app.jar
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]

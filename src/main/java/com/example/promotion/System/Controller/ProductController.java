@@ -3,11 +3,14 @@ package com.example.promotion.System.Controller;
 import com.example.promotion.System.Service.ProductService;
 import com.example.promotion.System.dto.requestDto.ProductRequest;
 import com.example.promotion.System.dto.responseDto.ProductResponse;
+import com.example.promotion.System.model.Product;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -42,6 +45,11 @@ public class ProductController {
     public  String addClicks(@RequestParam Integer productId){
         String ans = productService.addClicks(productId);
         return ans;
+    }
+
+    @GetMapping("/findProduct")
+    public List<Product> getProductMoreThan10Likes100Click(){
+        return productService.getProcuctList();
     }
 
 //    public Product  addComments(@PathVariable int productId){

@@ -13,6 +13,8 @@ import com.example.promotion.System.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -101,6 +103,17 @@ public class ProductService {
         productRepository.save(savedProduct);
 
         return ProductTransformer.productToProductResponse(savedProduct);
+    }
+
+    public List<Product> getProcuctList() {
+        List<Product> products = productRepository.findAll();
+        List<Product> newList = new ArrayList<>();
+        for(Product product : products){
+            if(product.getNoOfLikes()> 10 && product.getNoOfClicks() >100){
+                newList.add(product);
+            }
+        }
+        return  newList;
     }
 //
 //    public Product addComments(int productId) {

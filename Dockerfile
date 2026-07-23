@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM openjdk:19-jdk AS build
+FROM eclipse-temurin:17-jdk AS build
 WORKDIR /app
 
 # Copy the necessary files
@@ -15,7 +15,7 @@ RUN chmod +x ./mvnw
 RUN ./mvnw clean package -DskipTests
 
 # Stage 2: Create the final Docker image
-FROM openjdk:19-jdk
+FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Expose the default Spring Boot port

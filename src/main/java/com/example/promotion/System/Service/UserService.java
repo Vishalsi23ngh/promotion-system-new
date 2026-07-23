@@ -42,7 +42,7 @@ public class UserService {
         String email = userRequest.getEmailId();
         String subject = "Welcome to Our Application";
         String text = "Dear " + userRequest.getName() + ",\n\nThank you for registering with us.";
-        emailService.sendEmail(email, subject, text);
+//        emailService.sendEmail(email, subject, text);
 
         return UserTransformer.userToUserResponse(savedUser);
     }
